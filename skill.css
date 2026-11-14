@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: neo;
+  src: url(./NeueMachina-Regular.woff2);
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #111;
+  z-index: 100;
+  border-bottom: 1px solid #222;
+}
+
+.nav1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav1 h4 {
+  font-family: neo;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.nav2 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav2 h4 {
+  font-family: neo, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.nav2 h4 i {
+  font-size: 22px;
+}
+
+.nav3 {
+  display: none;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav3 h4 {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+main {
+  padding: 110px 40px 40px 40px; 
+}
+
+.section1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.left {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left h1 {
+  font-family: neo, sans-serif;
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags h4 {
+  background-color: #1f1f23;
+  border: 1px solid #333;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.left h3 {
+  font-size: 26px;
+}
+
+.left h3 span {
+  color: #38bdf8;
+  margin-left: 5px;
+}
+
+.left button {
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 12px;
+  border: none;
+}
+
+.left button:first-child {
+  background-color: hsl(198, 93%, 60%);
+  color: #111;
+}
+
+.left button:last-child {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+/* Right Card Styling (Jisse Language Hinglish clear dikhega) */
+.right {
+  width: 40%;
+  background-color: #18181b;
+  border: 1px solid #2e2e32;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.right img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.right h4 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #27272a;
+  font-size: 16px;
+  font-weight: 400;
+  color: #d4d4d8;
+}
+.right h4:hover{
+   color:steelblue;
+   text-shadow: 0 0 12px steelblue;
+}
+
+.right h4 span {
+  color:hsl(198, 94%, 66%);
+  font-weight: 500;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 25px;
+  }
+  .nav2 {
+    display: none;
+  }
+  .nav3 {
+    display: flex;
+  }
+  main {
+    padding: 95px 25px 30px 25px;
+  }
+  .section1 {
+    flex-direction: column;
+  }
+  .left, .right {
+    width: 100%;
+  }
+  .left h1 {
+    font-size: 30px;
+  }
+}
+.section2 {
+  padding: 100px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+}
+
+.section2 h1 {
+  font-family:monospace;
+  font-size:120px;
+background-image:url("download.jfif");
+position: relative;
+background-size:cover;
+background-clip:text;
+color:transparent;
+}
+ .section2 h1.bloom{
+  position:absolute;
+  filter:blur(60px);
+ }
+.section2 h3{
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  font-family: monospace;
+  font-weight:600;
+}
+@media(max-width:600px){
+.section2 h1{
+  font-size:10vw;
+}
+.section.h3{
+  font-size:3vw;
+  align-items: center;
+}
+}
